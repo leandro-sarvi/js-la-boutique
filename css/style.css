@@ -480,6 +480,7 @@ a:focus {
     justify-content: center;
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
 }
 
 .item-info {
@@ -489,32 +490,22 @@ a:focus {
     align-items: center;
     justify-content: center;
 }
-
-.slider {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
 .item-info i {
     font-size: 35px;
 }
-
-@media (min-width: 767.98px) {
-    .slider {
-        overflow-x: hidden;
-        justify-content: center;
-        width: 100%;
-    }
-}
-
-.slider img {
-    object-fit: cover;
-    scroll-snap-align: center;
-}
-
+.swiper {
+    width: 100%;
+    height: 10rem;
+  }
+  .swiper .swiper-button-prev,.swiper-button-next{
+      color: #6600a1;
+  }
+  .swiper-slide{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
@@ -647,13 +638,26 @@ a:focus {
     text-decoration: underline;
     color: #6600a1;
 }
+.map-responsive{
+    margin-top: 4rem;
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
     padding-top: 90px;
     background: #030f27;
     color: #ffffff;

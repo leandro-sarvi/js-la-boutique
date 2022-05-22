@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -22,6 +23,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <!-- Top Bar Start -->
@@ -116,13 +118,13 @@
     </div>
     <!-- Carousel End -->
     <div class="diagonal-box wow fadeInUp">
-        <div class="content-box"> 
+        <div class="content-box">
             <div class="section-header text-center">
                 <p>COTIZACIÓN</p>
                 <h2>Explora nuestro catálogo</h2>
             </div>
             <div class="coti">
-                <a  href="http://shoplaboutique.online" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                <a href="http://shoplaboutique.online" target="_blank"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </div>
@@ -236,17 +238,23 @@
                 <hr>
                 <p>Estas son algunas de las marcas más importantes que distribuimos. Encuentre los productos de calidad
                     que necesita para su próximo proyecto.</p>
-                <section class="slider">
-                    <img src="/img/logo-acindar.png" alt="">
-                    <img src="/img/logo-fv.png" alt="">
-                    <img src="/img/logo-loma-negra-blanco.png" alt="">
-                    <img src="/img/logo-weber.png" alt="">
-                </section>
-                <i class="fas fa-ellipsis-h"></i>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="/img/logo-acindar.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/img/logo-fv.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/img/logo-loma-negra-blanco.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/img/logo-weber.png" alt=""></div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
             </div>
         </div>
-
     </div>
+    
     <!-- MARCAS End -->
     <!-- About Start -->
     <div id="nosotros" class="about wow fadeInUp" data-wow-delay="0.1s">
@@ -290,7 +298,7 @@
     </div>
     <!-- CONTACTO End -->
     <!-- FAQs Start -->
-   <div class="faqs">
+    <div class="faqs">
         <div class="container">
             <div class="section-header text-center">
                 <p>FAQs</p>
@@ -349,7 +357,13 @@
             </div>
 
         </div>
-    </div> 
+    </div>
+    <div class="map-responsive">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52365.14321004161!2d-58.43082073585168!3d-34.88582962901528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd55c152349a7%3A0xa3c68fa3feb691ed!2sCorralon%20La%20boutique%20de%20la%20construcci%C3%B3n%20(Ex%20Casa%20Huergo)!5e0!3m2!1ses!2sar!4v1653256653822!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <!-- FAQs End -->
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -415,6 +429,7 @@
 
 
     <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/edd36e583e.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
