@@ -19,7 +19,20 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-
+body::-webkit-scrollbar {
+    width: 5px;    
+    background: white;           /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #6600a1;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #6600a1;  /* creates padding around scroll thumb */
+  }
 h1,
 h2,
 h4,
